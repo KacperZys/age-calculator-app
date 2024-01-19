@@ -19,13 +19,26 @@
   <main class="main">
     <section class="main__inputs">
       <form action="#" method="post">
-        <label>DAY<input class="input" type="number" placeholder="DD"></label>
-        <label>MONTH<input class="input" type="number" placeholder="MM"></label>
-        <label>YEAR<input class="input" type="number" placeholder="YYYY"></label>
+        <label>DAY<input class="input" name="days" type="number" placeholder="DD"></label>
+        <label>MONTH<input class="input" name="months" type="number" placeholder="MM"></label>
+        <label>YEAR<input class="input" name="years" type="number" placeholder="YYYY"></label>
+        <button type="submit" class="main__button"><img class="main__img" src="assets/images/icon-arrow.svg"
+            alt=""></button>
       </form>
     </section>
     <section class="main__display">
+      <div class="first-column">
+        <div class="first-column-display" name="days-display">a</div>
 
+        <div class="first-column-display" name="months-display">c</div>
+
+        <div class="first-column-display" name="years-display">e</div>
+      </div>
+      <div class="second-column">
+        <p class="main__text">years</p>
+        <p class="main__text">months</p>
+        <p class="main__text">days</p>
+      </div>
     </section>
   </main>
 
