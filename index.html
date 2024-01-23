@@ -18,30 +18,45 @@
 
   <main class="main">
     <section class="main__inputs">
-      <form action="#" method="post">
-        <label>DAY<input class="input" name="days" type="number" placeholder="DD"></label>
-        <label>MONTH<input class="input" name="months" type="number" placeholder="MM"></label>
-        <label>YEAR<input class="input" name="years" type="number" placeholder="YYYY"></label>
-        <button type="submit" class="main__button"><img class="main__img" src="assets/images/icon-arrow.svg"
-            alt=""></button>
-      </form>
+      <div class="main__inputs-name">
+        <p>days</p>
+        <p>MONTH</p>
+        <p>YEAR</p>
+      </div>
+
+      <div class="main__inputs-place">
+
+        <input class="input" name="day" type="number" placeholder="DD">
+
+        <input class="input" name="month" type="number" placeholder="MM">
+
+        <input class="input" name="year" type="number" placeholder="YYYY">
+      </div>
+      <button type="submit" class="main__button" onclick="calculate()"><img class="main__img"
+          src="assets/images/icon-arrow.svg" alt=""></button>
+
     </section>
     <section class="main__display">
-      <div class="first-column">
-        <div class="first-column-display" name="days-display">a</div>
-
-        <div class="first-column-display" name="months-display">c</div>
-
-        <div class="first-column-display" name="years-display">e</div>
-      </div>
-      <div class="second-column">
+      <div class="row flex-row">
+        <div class="row-display" name="days-display"></div>
+        <div class="row-display" name="days-display"></div>
         <p class="main__text">years</p>
+      </div>
+
+      <div class="row flex-row">
+        <div class="row-display" name="months-display"></div>
+        <div class="row-display" name="months-display"></div>
         <p class="main__text">months</p>
+
+      </div>
+      <div class="row flex-row">
+        <div class="row-display" name="years-display"></div>
+        <div class="row-display" name="years-display"></div>
         <p class="main__text">days</p>
       </div>
     </section>
   </main>
-
+  <script src="index.js"></script>
 </body>
 
 </html>
